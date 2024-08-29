@@ -4,7 +4,6 @@
   "manifest_version": 3,
   "name": "Shaderballs",
   "version": "4.20.0",
-  "permissions": ["activeTab", "tabs", "storage", "scripting"],
   "icons": {
     "256": "icons/ShaderBalls.png"
   },
@@ -16,6 +15,7 @@
       "run_at": "document_idle"
     }
   ],
+  
   "web_accessible_resources": [{
     "resources":[
       "node_modules/three/build/three.module.min.js",
@@ -23,11 +23,5 @@
       "orb.png"
     ],
     "matches": ["*://www.shadertoy.com/*"]
-  }],
-  "externally_connectable": {
-    "matches": ["*://www.shadertoy.com/*"]
-  },
-  "content_security_policy": {
-    "extension_pages": "default-src 'self' 'wasm-unsafe-eval';"
-  }
+  }]
 }
