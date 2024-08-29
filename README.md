@@ -1,8 +1,7 @@
 # ShaderBalls
+**(PRs always welcome! Accepting anything that extends vanilla shadertoy.com functionality.)**
 
 ![](readme-assets/ShaderBalls.webp)
-
-**(PRs always welcome! Accepting anything that extends vanilla shadertoy.com functionality.)**
 
 ## What it does
 
