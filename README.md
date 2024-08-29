@@ -18,6 +18,7 @@ This extension just includes:
 
 * This add-on injects JavaScript into https://shadertoy.com pages so it can add new UX and features.
 * Powered by popular open-source libs [THREE.js](https://github.com/mrdoob/three.js) and [Camera-Controls](https://github.com/yomotsu/camera-controls).
+* Under the hood it uses the the THREE.CanvasTexture to easily map the live-rendered shader onto 3D objects.
 
 ## Dev Instructions FireFox
 
