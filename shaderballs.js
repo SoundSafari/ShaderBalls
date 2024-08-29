@@ -50,16 +50,17 @@ injectionPt.parentElement.insertBefore(ourButton, injectionPt);
 const shadertoyCanvas = document.getElementById("demogl");
 if(injectionPt && shadertoyCanvas) {
     (async () => {
-        const srcTHREE = chrome.runtime.getURL("node_modules/three/src/Three.js");
+        const srcTHREE = chrome.runtime.getURL("node_modules/three/build/three.module.min.js");
         const srcCameraCtrls = chrome.runtime.getURL("node_modules/camera-controls/dist/camera-controls.module.min.js");
         const THREE = await import(srcTHREE);
         let CameraControls = await import(srcCameraCtrls);
         CameraControls = CameraControls.default;
         // Dev Note : Cannot use vanilla THREE.js camera-controls b/c module-maps are not possible
+        // Seee GH issue tradgedy https://github.com/WICG/import-maps/issues/92
         CameraControls.install({THREE: THREE});
 
-        ourButton.addEventListener("click", () => {
-            console.log("ORB TOY INITIATED!");
+        ourButton.addEventListener("mousedown", () => {
+            console.log(`${randBall()} : OrbToy Created.`);
             const babyWindow = document.createElement("div");
                 babyWindow.className="shaderballs";
                 babyWindow.style.position = "absolute";
@@ -150,12 +151,18 @@ if(injectionPt && shadertoyCanvas) {
                 frame = requestAnimationFrame(render);
             }
             frame = requestAnimationFrame(render);
-            close.addEventListener("click", () => {
+            close.addEventListener("mousedown", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                // THIS NEEDS TO HAPPEN FIRST (Weird Chrome Bug)
+                babyWindow.remove();
+
                 cancelAnimationFrame(frame);
                 orb.material.map.dispose();
                 orb.material.dispose();
                 orb.geometry.dispose();
-                babyWindow.remove();
+                console.log(`${randBall()} : Removed Orb Toy`)
             })
 
             let isDragging = false;
