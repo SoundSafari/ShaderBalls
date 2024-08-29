@@ -1,13 +1,15 @@
 # ShaderBalls
-**(PRs always welcome! Accepting anything that extends vanilla shadertoy.com functionality.)**
 
 ![](readme-assets/ShaderBalls.webp)
+
+**🎛️ - Your PRs are always welcome! Accepting anything that extends vanilla shadertoy.com functionality.**
 
 ## What it does
 
 This extension just includes:
 
-* A firefox/chromium extension to easily preview your shadertoy.com shaders on 3D objects. Free, public-domain/CC0-1.0, opensource.
+* A firefox/chromium extension to easily preview your shadertoy.com shaders on 3D objects.
+* Free, public-domain/CC0-1.0, opensource.
 * New button to trigger 3D preview
 
 ![](readme-assets/ShaderBalls.png)
