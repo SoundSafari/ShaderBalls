@@ -1,0 +1,23 @@
+{
+
+  "description": "View your fragment shaders textured onto spheres. Adds new UX to shadertoy.com so you can draft equirectangular/spherical shaders more easily.",
+  "manifest_version": 2,
+  "name": "Shaderballs",
+  "version": "1.0",
+  "icons": {
+    "256": "icons/ShaderBalls.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.shadertoy.com/*"],
+      "js": ["shaderballs.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "node_modules/three/src/Three.js",
+    "node_modules/camera-controls/dist/camera-controls.module.min.js",
+    "orb.png"
+  ]
+
+}
