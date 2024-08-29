@@ -1,0 +1,15 @@
+{
+  "name": "ShaderBalls",
+  "version": "4.20.0",
+  "description": "A firefox/chromium extension to easily preview your shadertoy.com shaders on 3D objects.\n\n(Free, public-domain/CC0-1.0, opensource)\n**This add-on injects JavaScript into https://shadertoy.com pages.** ",
+  "main": "shaderballs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SoundSafari - Linux Nation LLC",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "camera-controls": "^2.8.5",
+    "three": "^0.165.0"
+  }
+}
