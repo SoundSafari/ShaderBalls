@@ -1,6 +1,6 @@
 {
 
-  "description": "View your fragment shaders textured onto spheres. Adds new UX to shadertoy.com so you can draft equirectangular/spherical shaders more easily.",
+  "description": "View your shaders textured onto spheres. Adds new UX to shadertoy.com so you can draft equirectangular/spherical shaders more easily",
   "manifest_version": 3,
   "name": "Shaderballs",
   "version": "4.20.0",
@@ -15,7 +15,7 @@
       "run_at": "document_idle"
     }
   ],
-  
+
   "web_accessible_resources": [{
     "resources":[
       "node_modules/three/build/three.module.min.js",
