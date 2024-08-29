@@ -32,7 +32,7 @@ To run the shaderballs extension:
 
 *  Install the
    [web-ext](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Getting_started_with_web-ext)
-   tool. At the command line, open the example extension's folder and type
+   tool. At the command line, open the ShaderBall's folder and type
    `web-ext run`. This launches Firefox and installs the extension automatically.
    This tool provides some additional development features, such as
    [automatic reloading](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Getting_started_with_web-ext#Automatic_extension_reloading).  
